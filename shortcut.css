@@ -1,0 +1,30 @@
+.inv-img{
+    filter: invert(1);
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.gap{
+    gap: 15px;
+}
+.gap10{
+    gap: 10px;
+}
+.bg-grey{
+    background-color: #121212;
+}
+.border-radius{
+    border-radius: 7px;
+}
+.m-10{
+    margin: 10px;
+}
+.p-10{
+    padding: 10px;
+}
