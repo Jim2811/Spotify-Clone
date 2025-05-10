@@ -48,7 +48,7 @@ const playPrevSong = (songs) => {
     playMusic(songs[currentSongIndex]);
 };
 async function SongCards(){
-    let fetch_folders = await fetch('/songs/');
+    let fetch_folders = await fetch('https://github.com/Jim2811/Spotify-Clone/tree/main/songs/');
     let response = await fetch_folders.text();
     let div = document.createElement('div')
     div.innerHTML = response
@@ -149,7 +149,7 @@ async function main() {
     Array.from(cards).forEach(e => {
         e.addEventListener("click", async () => {
             let folderName = e.dataset.folder;
-            songs = await get_songs(`songs/${folderName}`);
+            songs = await get_songs(`https://github.com/Jim2811/Spotify-Clone/tree/main/songs/${folderName}`);
             let songUL = document.querySelector('.musicLists ul');
             songUL.innerHTML = ""; 
             songs.forEach(song => {
